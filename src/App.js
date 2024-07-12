@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import BasketballPlayerCard from './component/BasketballPlayerCard';
+import AddPlayerForm from './component/AddPlayerForm';
+import initialPlayers from './playerData';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [players, setPlayers] = useState(initialPlayers);
+
+	const addPlayer = (player) => {
+		setPlayers((prevPlayers) => [...prevPlayers, player]);
+	};
+
+	return (
+		<div className="App">
+			{players.map((player, index) => (
+				<BasketballPlayerCard
+					key={index}
+					name={player.name}
+					image={player.image}
+					position={player.position}
+					stats={player.stats}
+				/>
+			))}
+			<AddPlayerForm onAddPlayer={addPlayer} />
+		</div>
+	);
 }
 
 export default App;
