@@ -9,6 +9,11 @@ This project displays a card with information about a basketball player.
 3. Run `npm install` to install dependencies
 4. Run `npm start` to start the development server
 
+## Screenshot
+<br>
+![image](https://github.com/user-attachments/assets/15c88cc1-f92f-4ec7-ad83-6bd20896b40e)
+
+
 ## Usage
 
 The BasketballPlayerCard component accepts the following props:
