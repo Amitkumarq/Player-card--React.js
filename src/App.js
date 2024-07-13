@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasketballPlayerCard from './component/BasketballPlayerCard';
-import AddPlayerForm from './component/AddPlayerForm';
-import initialPlayers from './playerData';
-import './App.css';
+import players from './playerData';
 
 function App() {
-	const [players, setPlayers] = useState(initialPlayers);
-
-	const addPlayer = (player) => {
-		setPlayers((prevPlayers) => [...prevPlayers, player]);
-	};
-
 	return (
 		<div className="App">
 			{players.map((player, index) => (
@@ -22,7 +14,6 @@ function App() {
 					stats={player.stats}
 				/>
 			))}
-			<AddPlayerForm onAddPlayer={addPlayer} />
 		</div>
 	);
 }

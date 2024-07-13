@@ -8,15 +8,9 @@ const BasketballPlayerCard = ({ name, image, position, stats }) => {
 			<h2 className="player-name">{name}</h2>
 			<p className="player-position">{position}</p>
 			<div className="player-stats">
-				<p>
-					Points per Game: <span>{stats.pointsPerGame}</span>
-				</p>
-				<p>
-					Assists per Game: <span>{stats.assistsPerGame}</span>
-				</p>
-				<p>
-					Rebounds per Game: <span>{stats.reboundsPerGame}</span>
-				</p>
+				<p>Points per Game: {stats.pointsPerGame}</p>
+				<p>Assists per Game: {stats.assistsPerGame}</p>
+				<p>Rebounds per Game: {stats.reboundsPerGame}</p>
 			</div>
 		</div>
 	);

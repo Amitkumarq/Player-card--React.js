@@ -19,6 +19,46 @@ const players = [
 			reboundsPerGame: 5.3,
 		},
 	},
+	{
+		name: 'Michael Jordan',
+		image: '/images/image-3.jpg',
+		position: 'Forward',
+		stats: {
+			pointsPerGame: 28.4,
+			assistsPerGame: 9.1,
+			reboundsPerGame: 8.5,
+		},
+	},
+	{
+		name: 'magic Johnson',
+		image: '/images/image-4.jpg',
+		position: 'Guard',
+		stats: {
+			pointsPerGame: 28.2,
+			assistsPerGame: 4.5,
+			reboundsPerGame: 6.3,
+		},
+	},
+	{
+		name: 'Michael Jordan',
+		image: '/images/image-3.jpg',
+		position: 'Forward',
+		stats: {
+			pointsPerGame: 28.4,
+			assistsPerGame: 9.1,
+			reboundsPerGame: 8.5,
+		},
+	},
+	{
+		name: 'magic Johnson',
+		image: '/images/image-4.jpg',
+		position: 'Guard',
+		stats: {
+			pointsPerGame: 28.2,
+			assistsPerGame: 4.5,
+			reboundsPerGame: 6.3,
+		},
+	},
 	// Add more player objects here
 ];
 

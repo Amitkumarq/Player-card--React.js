@@ -4,12 +4,12 @@
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
-
 .player-card {
+  display: inline-block;
   border-radius: 20px;
   padding: 20px;
   max-width: 300px;
-  margin: 20px auto;
+  margin: 30px 30px;
   text-align: center;
   background-color: #f0f0f0;
   box-shadow: 8px 8px 16px #d9d9d9,
